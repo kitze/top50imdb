@@ -1,0 +1,64 @@
+/* App.css */
+
+.root {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background-color: #242424;
+  color: white;
+}
+
+header {
+  background-color: #282c34;
+  padding: 1px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.movie-card {
+  cursor: pointer;
+  border: 1px solid rgb(85, 85, 85);
+  padding: 5px;
+  border-radius: 8px;
+  height: 195px;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.25; /* Lower opacity by default */
+}
+
+@media (min-width: 768px) {
+  .movie-card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.movie-details {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.watched {
+  opacity: 1;
+  background-color: rgb(27, 27, 27);
+}
