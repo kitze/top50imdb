@@ -34,7 +34,6 @@ const App = () => {
         <div className="movie-grid">
           {movies.map((movie, index) => {
             const watched = watchedMovies.value.find((m) => m.id === index);
-            console.log({watched})
             return (
               <MovieCard
                 key={index}
